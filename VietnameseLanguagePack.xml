@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="Documentation/Schemas/Amplitude.Unity.Runtime.RuntimeModule.xsd">
+    <!-- Conversion = add new files, not compatible with other mods. Standalone = replace all files, not compatible with other mods. Extension = add new files, compatible with other mods. // Example : <RuntimeModule Name="ExampleTechnology" Type="Extension" Version="1.1">-->
+    <!-- For the "Name", do not use spaces or special characters (like "&"), otherwise your mod will not load -->
+    <RuntimeModule Name="VietnameseLanguagePack" Type="Extension" Version="2020.06.26">
+        <!-- Title as it appears in the workshop // Example : <Title>Example technology</Title>. Here, you can use spaces and special characters (like "&")-->
+        <Title>Vietnamese Language Pack</Title>
+        <!-- Description as it appears in the workshop // Example : <Description>Adds:- Technology - Exclusion technology link - Cost reduction technology link</Description>-->
+        <Description>Endless Space 2 Việt Hoá</Description>
+        <!-- Name of the author // Example : <Author>I_AM_ENFER</Author>-->
+        <Author>KingCTer</Author>
+        <!-- Link to your other work // Example : <Homepage>https://www.games2gether.com/</Homepage>-->
+        <Homepage></Homepage>
+        <!-- Image as it appears in the workshop. Size should be 430x430 pixels // Example : <PreviewImageFile>ModIcon.png</PreviewImageFile>-->
+        <PreviewImageFile>ModIcon.png</PreviewImageFile>
+        <!-- Add more content to this each time you update the mod // Example : <ReleaseNotes>Added XSD validation for easier use.</ReleaseNotes>-->
+        <ReleaseNotes>Experiment</ReleaseNotes>
+        <!-- Available tags: AI, Art, Buildings, Gameplay, Improvements, MajorFactions, Maps, MinorFactions, Multiplayer, Other, Resources, Technologies, Units // Example : <Tags>Gameplay</Tags>-->
+        <Tags>Other, Language, Vietnamese</Tags>
+
+        <!-- XML files to load -->
+        <Plugins>
+            <!-- Add this if you replace text. Note that sub-folders must be named after the languages they contain -->
+            <LocalizationPlugin DefaultLanguage="english">
+                <Directory>Localization</Directory>
+            </LocalizationPlugin>
+        </Plugins>
+
+    </RuntimeModule>
+</Datatable>
